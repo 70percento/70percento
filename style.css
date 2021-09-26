@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+}
+
+/* FONT */
+
+@font-face {
+  font-family: DTLFleischmann-Bold;
+  src: url('DTLFleischmann-DBold.otf');
+}
+
+@font-face {
+  font-family: DTLFleischmann-Regular;
+  src: url('DTLFleischmann-STRegular.otf');
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url('GillSans.ttc');
+}
+
+/* LINK */
+
+.container a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.container a:visited {
+  color: black;
+}
+
+.container a:hover {
+  color: #ff7500;
+}
+
+.rightContainer a:active {
+  color: black;
+}
+
+/* STRUCTURE */
+
+.background {
+  background-color: #ff7500;
+  height: 100vh;
+}
+
+.container {
+  /*background-color: yellow;*/
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  flex-direction: row;
+}
+
+ul {
+  padding: 0;
+}
+
+.info {
+
+}
+
+.lucanus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+/* STYLE */
+
+.titleSans {
+  color: black;
+  font-family: GillSans;
+  font-size: 2em;
+  /*letter-spacing: 0.05em;*/
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titleSerif {
+  color: black;
+  font-family: DTLFleischmann-Bold;
+  font-size: 2em;
+  /*letter-spacing: 0.05em;*/
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.SubTitleSans {
+  color: black;
+  font-family: GillSans;
+  font-size: 1em;
+  /*letter-spacing: 0.05em;*/
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.body {
+  color: black;
+  font-family: DTLFleischmann-Regular;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+li {
+  display: inline-block;
+  font-family: GillSans;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+  font-family: DTLFleischmann-Bold;
+  text-align: center;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 0.8rem;
+    padding: .35rem;
+  }
+
+  li span {
+    font-size: 1.75rem;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  .titleSans {
+    color: black;
+    font-family: GillSans;
+    font-size: 1.5em;
+    /*letter-spacing: 0.05em;*/
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .titleSerif {
+    color: black;
+    font-family: DTLFleischmann-Bold;
+    font-size: 1.5em;
+    /*letter-spacing: 0.05em;*/
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .SubTitleSans {
+    color: black;
+    font-family: GillSans;
+    font-size: 0.8em;
+    /*letter-spacing: 0.05em;*/
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
