@@ -154,7 +154,11 @@ li span {
   }
 
   ul {
-    padding: 0;
+    padding-top: 40px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: fit-content;
   }
 
   .titleSans {
@@ -183,13 +187,32 @@ li span {
     text-align: center;
     text-transform: uppercase;
   }
-  
-   .container {
+
+  .container {
     min-width: 100%;
   }
 
-  .counter {
-    padding: 0 0 0 60px;
+  /*#countdown {
+    position: relative;
+  }*/
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 550px) and (max-width : 1024px) {
+  ul {
+    padding-top: 40px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    width: fit-content;
   }
   
+  li {
+    font-size: 0.8rem;
+    padding: .35rem;
+  }
+
+  li span {
+    font-size: 1.75rem;
+  }
 }
