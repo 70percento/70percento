@@ -140,6 +140,15 @@ li span {
 }
 
 @media all and (max-width: 768px) {
+  
+    .titleSans {
+    font-size: 1.3em;
+  }
+
+  .titleSerif {
+    font-size: 1.3em;
+  }
+  
   h1 {
     font-size: 1.5rem;
   }
