@@ -15,6 +15,11 @@ body {
 }
 
 @font-face {
+  font-family: DTLFleischmann-Italic;
+  src: url('DTLFleischmann-STItalic.otf');
+}
+
+@font-face {
   font-family: GillSans;
   src: url('GillSans.ttc');
 }
@@ -43,31 +48,60 @@ body {
 .background {
   background-color: #ff7500;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .container {
   /*background-color: yellow;*/
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  flex-direction: row;
+  margin: 0 auto;
+  width: 50%;
+  padding: 100px;
+
 }
 
 ul {
   padding: 0;
 }
 
-.info {
-
-}
 
 .lucanus {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 10%;
+}
+
+.icon {
+  max-width: 50px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 50px 0;
+}
+
+.qr {
+  max-width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  padding: 50px 0;
+}
+
+.intro {
+  min-height: 100%;
+}
+
+.book {
+  /*padding-top: 30px;*/
 }
 
 /* STYLE */
@@ -106,6 +140,47 @@ ul {
   text-align: center;
 }
 
+.titleSansInt {
+  color: #6b5956;
+  font-family: GillSans;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titleSerifInt {
+  color: #6b5956;
+  font-family: DTLFleischmann-Bold;
+  font-size: 1.5em;
+  /*letter-spacing: 0.05em;*/
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bodyInt {
+  color: #6b5956;
+  font-family: DTLFleischmann-Regular;
+  font-size: 1.2em;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.bodyItalic {
+  color: #6b5956;
+  font-family: DTLFleischmann-Italic;
+  font-size: 1.2em;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.info {
+  color: #6b5956;
+  font-family: DTLFleischmann-Regular;
+  font-size: 1.2em;
+  text-align: center;
+  hyphens: auto;
+}
+
 h1 {
   font-weight: normal;
   letter-spacing: .125rem;
@@ -140,15 +215,15 @@ li span {
 }
 
 @media all and (max-width: 768px) {
-  
-    .titleSans {
+
+  .titleSans {
     font-size: 1.3em;
   }
 
   .titleSerif {
     font-size: 1.3em;
   }
-  
+
   h1 {
     font-size: 1.5rem;
   }
@@ -173,7 +248,7 @@ li span {
   .titleSans {
     color: black;
     font-family: GillSans;
-    font-size: 1.5em;
+    font-size: 1.25em;
     /*letter-spacing: 0.05em;*/
     text-align: center;
     text-transform: uppercase;
@@ -198,7 +273,7 @@ li span {
   }
 
   .container {
-    min-width: 100%;
+    width: 90%;
   }
 
   /*#countdown {
@@ -215,7 +290,7 @@ li span {
     -webkit-transform: translate(-50%, -50%);
     width: fit-content;
   }
-  
+
   li {
     font-size: 0.8rem;
     padding: .35rem;
