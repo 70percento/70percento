@@ -275,6 +275,11 @@ li span {
   .container {
     width: 90%;
   }
+  
+  .bodyInt {
+    text-justify: distribute;
+    word-spacing:-2px;
+  }
 
   /*#countdown {
     position: relative;
